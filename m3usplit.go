@@ -16,6 +16,7 @@ package main
 import (
     "fmt"
     "os"
+    "strings"
     "path/filepath"
     "strconv"        
     "github.com/dj80hd/dj80hdutil"
@@ -71,6 +72,11 @@ func main() {
     for i := 0; i < len(mp3Files); i++ {
         //Get the relative path in the m3u file
         v := mp3Files[i]
+
+        //Ignore m3u comments (begin with #)
+        if strings.Index(v,"#") == 0 {
+            continue
+        }
 
         //ALSO resolve the name to the original m3u file
         //because the directory where this is running is likely NOT
