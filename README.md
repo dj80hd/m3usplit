@@ -1,4 +1,4 @@
-splitm3u
+m3usplit
 ========
 My first attempt at writing a go language program.  It splits large mp3 files
 into smaller m3u files.
