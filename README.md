@@ -8,8 +8,14 @@ For example, if I had an m3u file containing the entire mp3 discography of deadm
 m3usplit deadmau5_discog.m3u 700
 
 
-For help just type the command:
+Build
+```
+go build m3usplit.go
+```
 
-m3usplit
+Run
+```
+./m3usplit
+```
 
 
